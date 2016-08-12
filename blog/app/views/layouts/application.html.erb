@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<nav class="be-red green large-padding">
+		<dl class="no-list row center-xs middle-xs ">		
+			<dt class="col-md">
+				<h1 class="no-margin", id="logo">Blog Oliver</h1>
+			</dt>
+				<dt class="col-md green">
+					<%=  link_to "Inicio", root_path %>
+				</dt>
+				<dt class="col-md">
+					Disenio
+				</dt>
+
+				<dt class="col-md">
+					Programacion
+				</dt>
+				<dt class="col-md">
+					Novedades Tecnologicas
+				</dt>
+
+			</dl>
+		</nav>
+	</header>
+	<%= yield %>
+
+</body>
+</html>
